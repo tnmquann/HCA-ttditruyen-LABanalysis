@@ -3,13 +3,12 @@ library(dplyr)
 library(ggplot2)
 library(dendextend)
 library(factoextra)
-#LAB_raw <- as.data.frame(t(read.csv("D:/dendrogram_ttdt/LAB-raw.csv", header=T,row.names=1)))
 
-LAB_data <- read.csv("D:/dendrogram_ttdt/LAB-filtered.csv", header=T,row.names=1)
-df_pH<-LAB_data[,c(3:5)]
+LAB_data <- read.csv("<add your PATH here>", header=T,row.names=1)
 # which(names(LAB_data)%in%c("E.aver"))
 
 # Create data frame for 3 categories: only pH values, only AMR values and both pH + AMR values.----
+df_pH<-LAB_data[,c(3:5)]
 df_amr<-LAB_data[,c(1:2,20:ncol(LAB_data))]
 df_concat<-LAB_data[,c(1:2,3:5,20:ncol(LAB_data))]
 
