@@ -68,7 +68,7 @@ dl <- dendlist(
 )
 
 # Plot tanglegram------
-png('tanglefram_HCA.png', pointsize=10, width=4000, height=2000, res=600)
+png('tanglegram_HCA.png', pointsize=10, width=4000, height=2000, res=600)
 par(mar=c(9,1,1,1))
 tanglegram(dl, 
            common_subtrees_color_lines = FALSE, highlight_distinct_edges  = TRUE, highlight_branches_lwd=FALSE, 
